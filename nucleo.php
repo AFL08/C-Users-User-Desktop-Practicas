@@ -14,7 +14,7 @@
         ,"Telarañas"
         ,"Marvel");
 
-        $heroeRegistrado->array($IronMan,$Spiderman);
+        $heroeRegistrado = array($IronMan,$Spiderman);
 
         foreach($heroeRegistrado as $hero){
             echo "<p>" . $hero . "</p><br/>";
