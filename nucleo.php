@@ -11,7 +11,7 @@
         ,"Marvel");
 
         foreach($heroeRegistrado as $hero){
-            echo "<h1>".$hero."</h1><br/>";
+            echo "<p>" . $hero . "</p><br/>";
         }
 ?>
 </body>
