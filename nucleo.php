@@ -8,15 +8,6 @@
 
 <?php
     include 'primero.php';
-        $nombreHeroe;
-        $poderHeroe;
-        $detallesHeroe;
-        $universoHeroe;
-
-
-
-        $superHeroe = new Heroes($nombreHeroe,$poderHeroe,$detallesHeroe,$universoHeroe);
-
         $IronMan = new Heroes("Iron Man","Fuerza y Vuelo"
         ,"Multimillonario, Prodigio creando armas, Con la armadura puede destruir cualquier cosa y consigue reponerse a cualquier problema"
         ,"Marvel");
@@ -27,7 +18,7 @@
 
         $heroeRegistrado = array($IronMan,$Spiderman);
 
-        foreach($heroeRegistrado=array([$nombreHeroe]) as $hero){
+        foreach($heroeRegistrado=array($IronMan) as $hero){
             #echo "<p>" . $hero . "</p><br/>";
             #if($heroeRegistrado=array($IronMan=array([]))
             var_dump($hero);

@@ -1,16 +1,9 @@
 
 <?php
-
+    include 'ConjuntoHeroes.php';
     #print "Hola mundo";
-    class Heroes
+    class Heroes extends ConjuntoHeroes
     {
-        public $nombreHeroe;
-        public $poderHeroe;
-        public $descripcionHeroe;
-        public $universoHeroe;
-
-        
-
         public function __construct($nombreHeroe, $poderHeroe, $descripcionHeroe, $universoHeroe){
             $this->nombreHeroe=$nombreHeroe;
             $this->poderHeroe=$poderHeroe;
