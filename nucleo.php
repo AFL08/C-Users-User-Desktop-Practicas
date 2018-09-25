@@ -6,13 +6,15 @@
 <?php
     include 'primero.php';
 
-        $heroeRegistrado = new Heroes("Iron Man","Fuerza y Vuelo"
+        $IronMan = new Heroes("Iron Man","Fuerza y Vuelo"
         ,"Multimillonario, Prodigio creando armas, Con la armadura puede destruir cualquier cosa y consigue reponerse a cualquier problema"
         ,"Marvel");
         
-        $heroeRegistrado = new Heroes("Spider-Man","Vuelo, Fuerza y Resistencia"
+        $Spiderman = new Heroes("Spider-Man","Vuelo, Fuerza y Resistencia"
         ,"Telarañas"
         ,"Marvel");
+
+        $heroeRegistrado->array($IronMan,$Spiderman);
 
         foreach($heroeRegistrado as $hero){
             echo "<p>" . $hero . "</p><br/>";
