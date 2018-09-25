@@ -18,7 +18,7 @@
 
         $heroeRegistrado = array($IronMan,$Spiderman);
 
-        foreach($heroeRegistrado as $hero){
+        foreach($heroeRegistrado=array($IronMan) as $hero){
             #echo "<p>" . $hero . "</p><br/>";
             #if($heroeRegistrado=array($IronMan=array([]))
             var_dump($hero);
