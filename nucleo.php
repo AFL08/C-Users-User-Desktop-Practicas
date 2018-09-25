@@ -4,11 +4,10 @@
 </head>
 <body>
 <?php
-    class Nucleo{
-        private $nombreHeroe;
-        private $poderHeroe;
-        private $descripcionHeroe;
-        private $universoHeroe;
+        $nombreHeroe;
+        $poderHeroe;
+        $descripcionHeroe;
+        $universoHeroe;
         $heroeRegistrado = new Heroes($nombreHeroe,$poderHeroe,$descripcionHeroe,$universoHeroe);
 
         /*$heroeRegistrado->array([return]->array([0]->array([$nombreHeroe] = "Iron Man" ->[$poderHeroe] = "Fuerza y Vuelo" -> [$descripcionHeroe]
@@ -24,7 +23,7 @@
         /*$heroeTotalmenteIdentificado = new Heroe('Iron Man','Fuerza y Vuelo'
     ,'Multimillonario, prodigio de las armas',1990,'Marvel');
     $heroeTotalmenteIdentificado = new Heroe('Iron Man','Fuerza y Vuelo'
-    ,'Multimillonario, prodigio de las armas',1990,'Marvel');
+    ,'Multimillonario, prodigio de las armas',1990,'Marvel');*/
     
         /*for($i=0;$i<count($heroeTotalmenteIdentificado);$i++){
             echo "<h1>$heroeIdentificado[$i]->getValorNombreHeroe()</h1>";
@@ -35,7 +34,6 @@
             echo "<h1>".$hero."</h1></br>";
         }
         $heroeIdentificado->ComprobacionUniversoPerteneciente();
-    }
 ?>
 </body>
 </html>

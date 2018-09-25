@@ -9,9 +9,6 @@
         public $descripcionHeroe;
         public $universoHeroe;
 
-        public function __construct(){
-            
-        }
         
 
         public function __construct($nombreHeroe, $poderHeroe, $descripcionHeroe, $universoHeroe){
@@ -22,12 +19,12 @@
         }
 
         public function ComprobacionUniversoPerteneciente(){
-            if($univeroHeroe = "DC"){
-                echo "Este personaje pertenece al universo DC"
-            }else if($universoHeroe = "Marvel"){
-                echo "Este personaje pertenece al universo Marvel"
+            if($univeroHeroe == "DC"){
+                echo "Este personaje pertenece al universo DC";
+            } elseif ($universoHeroe == "Marvel"){
+                echo "Este personaje pertenece al universo Marvel";
             }else{
-                echo "Este personaje pertenece a cualquier universo diferente"
+                echo "Este personaje pertenece a cualquier universo diferente";
             }
         }
 
