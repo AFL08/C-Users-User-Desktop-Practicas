@@ -3,8 +3,16 @@
     <title>Pagina Creada</title>
 </head>
 <body>
+    <input type="textbox"/>
+
 <?php
     include 'primero.php';
+        $nombreHeroe;
+        $poderHeroe;
+        $detallesHeroe;
+        $universoHeroe;
+
+        $superHeroe = new Heroes($nombreHeroe,$poderHeroe,$detallesHeroe,$universoHeroe);
 
         $IronMan = new Heroes("Iron Man","Fuerza y Vuelo"
         ,"Multimillonario, Prodigio creando armas, Con la armadura puede destruir cualquier cosa y consigue reponerse a cualquier problema"
@@ -16,9 +24,12 @@
 
         $heroeRegistrado = array($IronMan,$Spiderman);
 
-        foreach($heroeRegistrado as $hero){
-            echo "<p>" . $hero . "</p><br/>";
+        foreach($heroeRegistrado=array($IronMan) as $hero){
+            #echo "<p>" . $hero . "</p><br/>";
+            #if($heroeRegistrado=array($IronMan=array([]))
+            var_dump($hero);
         }
+
 ?>
 </body>
 </html>
