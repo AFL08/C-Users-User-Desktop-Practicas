@@ -1,10 +1,15 @@
+<html>
+<head>
+    <title>Pagina Creada</title>
+</head>
+<body>
 <?php
     class Nucleo{
         private $nombreHeroe;
         private $poderHeroe;
         private $descripcionHeroe;
         private $universoHeroe;
-        $heroeRegistrado = new Heroe($nombreHeroe,$poderHeroe,$descripcionHeroe,$universoHeroe);
+        $heroeRegistrado = new Heroes($nombreHeroe,$poderHeroe,$descripcionHeroe,$universoHeroe);
 
         /*$heroeRegistrado->array([return]->array([0]->array([$nombreHeroe] = "Iron Man" ->[$poderHeroe] = "Fuerza y Vuelo" -> [$descripcionHeroe]
         = "Multimillonario, Prodigio creando armas, Con la armadura puede destruir cualquier cosa y consigue reponerse a cualquier problema con demasiada facilidad"
@@ -32,3 +37,5 @@
         $heroeIdentificado->ComprobacionUniversoPerteneciente();
     }
 ?>
+</body>
+</html>
