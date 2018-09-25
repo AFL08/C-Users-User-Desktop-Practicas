@@ -3,7 +3,8 @@
     <title>Pagina Creada</title>
 </head>
 <body>
-    <input type="textbox"/>
+    <input type="textbox" name="nombreSuperheroe"/><br/>
+    <input type="button" name="mostrarDatosHeroe"/><br/>
 
 <?php
     include 'primero.php';
@@ -11,6 +12,8 @@
         $poderHeroe;
         $detallesHeroe;
         $universoHeroe;
+
+
 
         $superHeroe = new Heroes($nombreHeroe,$poderHeroe,$detallesHeroe,$universoHeroe);
 
@@ -24,12 +27,14 @@
 
         $heroeRegistrado = array($IronMan,$Spiderman);
 
-        foreach($heroeRegistrado=array($IronMan) as $hero){
+        foreach($heroeRegistrado=array(0) as $hero){
             #echo "<p>" . $hero . "</p><br/>";
             #if($heroeRegistrado=array($IronMan=array([]))
             var_dump($hero);
         }
 
 ?>
+
+
 </body>
 </html>
