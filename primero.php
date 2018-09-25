@@ -2,16 +2,11 @@
 <?php
     include 'ConjuntoHeroes.php';
     #print "Hola mundo";
-    class Heroes extends ConjuntoHeroes
+    class Heroes 
     {
-        public function __construct($nombreHeroe, $poderHeroe, $descripcionHeroe, $universoHeroe){
-            $this->nombreHeroe=$nombreHeroe;
-            $this->poderHeroe=$poderHeroe;
-            $this->descripcionHeroe=$descripcionHeroe;
-            $this->universoHeroe=$universoHeroe;
-        }
+        
 
-        public function ComprobacionUniversoPerteneciente(){
+        public function ComprobacionUniversoPerteneciente($universoHeroe){
             if($univeroHeroe == "DC"){
                 echo "<p>Este personaje pertenece al universo DC</p>";
             } elseif ($universoHeroe == "Marvel"){
