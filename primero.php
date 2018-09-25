@@ -1,7 +1,7 @@
 
 <?php
 
-    print "Hola mundo";
+    #print "Hola mundo";
     class Heroes
     {
         public $nombreHeroe;
