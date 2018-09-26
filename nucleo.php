@@ -34,7 +34,7 @@
                 <h2 class="card-title">Nombre de Superheroe: <?php echo $hero->nombreHeroe?></h2>
                 <p class="card-text">Poder SuperHeroe: <?php echo $hero->poderHeroe?></p>
                 <p class="card-text">Detalles SuperHeroe: <?php echo $hero->detallesHeroe?></p>
-                <p class="card-text">Universo SuperHeroe: <?php echo $hero->universoHeroe?></p>
+                <p class="card-text">Detalles SuperHeroe: <?php echo $hero->ComprobacionUniversoPerteneciente($hero->universoHeroe)?></p>
                 <img class="card-img-top" src="/Imagenes/<?php echo $hero->universoHeroe?>.png" alt="Card image cap" height="100px">
                 <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
             </div>
@@ -42,7 +42,6 @@
 
             <?php
             #var_dump($hero);
-            $hero->ComprobacionUniversoPerteneciente($hero->universoHeroe);
         }
 ?>
 
