@@ -26,9 +26,9 @@
         }
 
         public function ComprobacionUniversoPerteneciente($universoHeroe){
-            if($univeroHeroe == "DC"){
+            if($univeroHeroe == "dc"){
                 echo "<p>Este personaje pertenece al universo DC</p>";
-            } elseif ($universoHeroe == "Marvel"){
+            } elseif ($universoHeroe == "marvel"){
                 echo "<p>Este personaje pertenece al universo Marvel</p>";
             }else{
                 echo "<p>Este personaje pertenece a cualquier universo diferente</p>";
