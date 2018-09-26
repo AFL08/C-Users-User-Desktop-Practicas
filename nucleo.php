@@ -60,12 +60,13 @@
 
         }
 
-        $consultaDatosHeroes = mysqli_query("SELECT nombre, poder, detalles, universo FROM Heroe;");
+        $consultaDatosHeroes = mysqli_query("SELECT * FROM Heroe;");
             while($filaConsultaHeroe = mysqli_fetch_object($consultaDatosHeroes)){
-                echo "<p>$filaConsultaHeroe->nombre</p><br/>";
-                echo "<p>$filaConsultaHeroe->poder</p><br/>";
-                echo "<p>$filaConsultaHeroe->detalles</p><br/>";
-                echo "<p>$filaConsultaHeroe->universo</p><br/>";
+                echo "<p>" . $filaConsultaHeroe->identificacion . "</p><br/>";
+                echo "<p>" . $filaConsultaHeroe->nombre . "</p><br/>";
+                echo "<p>" . $filaConsultaHeroe->poder . "</p><br/>";
+                echo "<p>" . $filaConsultaHeroe->detalles . "</p><br/>";
+                echo "<p>" . $filaConsultaHeroe->universo . "</p><br/>";
             }
             mysqli_free_result($consultaDatosHeroes);
         mysqli_close();
