@@ -49,8 +49,9 @@
 
             <?php
             #var_dump($hero);
-            mysqli_query("INSERT INTO 'Heroe' (nombre, poder, detalles, universo) values (" . $hero->nombreHeroe . "," . $hero->poderHeroe . "," . $hero->detallesHeroe . "
-            ," . $hero->universoHeroe . ");");
+            /*mysqli_query("INSERT INTO 'Heroe' (nombre, poder, detalles, universo) values (" . $hero->nombreHeroe . "," . $hero->poderHeroe . "," . $hero->detallesHeroe . "
+            ," . $hero->universoHeroe . ");");*/
+            mysqli_query("SELECT * FROM Heroe;");
             printf('Has registrado al heroe con la identificacion: %d', mysqli_insert_id());
             $realizacionConexion->CerrarConexion();
             
