@@ -47,17 +47,15 @@
             </div>
 
             <?php
-            $conexionBaseDatos = mysqli_connect('localhost','alvaro','alvaro','HeroesRegistrados',3306);
-            if(!$conexionBaseDatos){
-                echo "<p>No se pudo conectar a la base de datos" . mysqli_error() . "</p>";
-            }
-            echo "<p>Conexion exitosa</p>";
+            $realizacionConexion = new ConexionBaseDatos();
+            $realizacionConexion->ComprobarConexion();
             #var_dump($hero);
-            $conexionBaseDatos->query("INSERT INTO Heroe (nombre, poder, detalles, universo) values (' . $hero->nombreHeroe . ',' . $hero->poderHeroe . ',' . $hero->detallesHeroe . '
+            $realizacionConexion->conexionBaseDatos->query("INSERT INTO Heroe (nombre, poder, detalles, universo) values (' . $hero->nombreHeroe . ',' . $hero->poderHeroe . ',' . $hero->detallesHeroe . '
             ,' . $hero->universoHeroe . ');");
             /*mysqli_query("SELECT * FROM Heroe;");
             echo*/ 
-            mysqli_close();
+            
+            $realizacionConexion->CerrarConexion();
             
         }
 
