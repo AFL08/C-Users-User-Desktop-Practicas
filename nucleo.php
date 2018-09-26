@@ -59,10 +59,10 @@
             /*mysqli_query("SELECT * FROM Heroe;");
             echo */
             
-            $realizacionConexion->CerrarConexion();
+            
             
         }
-
+        mysqli_close();
         
 ?>
 </body>
