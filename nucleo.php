@@ -25,9 +25,11 @@
             <div class="card" style="width: 18rem;">
             <!--<img class="card-img-top" src=".../100px180/" alt="Card image cap">-->
             <div class="card-body">
-                <h5 class="card-title"><?php echo $hero->nombreHeroe?></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h1 class="card-title">Nombre de Superheroe: <?php echo $hero->nombreHeroe?></h1>
+                <p class="card-text">Poder SuperHeroe: <?php echo $hero->poderHeroe?></p>
+                <p class="card-text">Detalles SuperHeroe: <?php echo $hero->detallesHeroe?></p>
+                <p class="card-text">Universo SuperHeroe: <?php echo $hero->universoHeroe?></p>
+                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
             </div>
             </div>
 
