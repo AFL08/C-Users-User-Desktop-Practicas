@@ -19,7 +19,7 @@
         }
         /*Setter general*/
         public function __set($propiedad2, $valor){
-            if(property_exists($this, $propiedad)){
+            if(property_exists($this, $propiedad2)){
                 $this->$property=$valor;
             }
             return $this;
