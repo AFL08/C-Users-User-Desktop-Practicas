@@ -1,10 +1,10 @@
 <?php
     class ConjuntoHeroes{
-        private $nombreHeroe;
-        private $poderHeroe;
-        private $detallesHeroe;
-        private $universoHeroe;
-        private function __construct(){}
+        public $nombreHeroe;
+        public $poderHeroe;
+        public $detallesHeroe;
+        public $universoHeroe;
+        public function __construct(){}
 
         public function setNombreHeroe($nombreHeroe){}
 
