@@ -48,8 +48,8 @@
 
             <?php
             #var_dump($hero);
-            mysqli_query("INSERT INTO Heroe ('nombre','poder','detalles','universo') VALUES('$hero->nombreHeroe','$hero->poderHeroe','$hero->detallesHeroe'
-            ,'$hero->universoHeroe');");
+            mysqli_query("INSERT INTO Heroe ('nombre','poder','detalles','universo') values ('$hero->nombreHeroe','$hero->poderHeroe','$hero->detallesHeroe'
+            ,'$hero->universoHeroe')");
             echo "Se ha registrado al Heroe " . $hero->nombreHeroe . " sin problema";
             
         }
