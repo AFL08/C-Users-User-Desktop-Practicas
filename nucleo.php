@@ -29,7 +29,7 @@
         
         
         foreach($heroeRegistrado as $hero){
-            
+
             #echo "<p>" . $hero . "</p><br/>";
             #if($heroeRegistrado=array($IronMan=array([]))
             ?>
@@ -50,10 +50,10 @@
             $realizacionConexion = new ConexionBaseDatos();
             $realizacionConexion->ComprobarConexion();
             #var_dump($hero);
-            $realizacionConexion->conexionBaseDatos->query("INSERT INTO Heroe (nombre, poder, detalles, universo) values (' . $hero->nombreHeroe . ',' . $hero->poderHeroe . ',' . $hero->detallesHeroe . '
+            $realizacionConexion->$conexionBaseDatos->query("INSERT INTO Heroe (nombre, poder, detalles, universo) values (' . $hero->nombreHeroe . ',' . $hero->poderHeroe . ',' . $hero->detallesHeroe . '
             ,' . $hero->universoHeroe . ');");
             /*mysqli_query("SELECT * FROM Heroe;");
-            echo*/ 
+            echo */
             
             $realizacionConexion->CerrarConexion();
             
