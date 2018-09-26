@@ -8,7 +8,6 @@
 
 <?php
         include 'primero.php';
-        echo "<p>hola</p>";
         $IronMan = new Heroes("Iron Man","Fuerza y Vuelo"
         ,"Multimillonario, Prodigio creando armas, Con la armadura puede destruir cualquier cosa y consigue reponerse a cualquier problema"
         ,"Marvel");
@@ -23,7 +22,7 @@
             #echo "<p>" . $hero . "</p><br/>";
             #if($heroeRegistrado=array($IronMan=array([]))
             var_dump($hero);
-            #$IronMan->ComprobacionUniversoPerteneciente($IronMan->get_universoHeroe($IronMan->$));
+            $IronMan->ComprobacionUniversoPerteneciente($IronMan->get_universoHeroe());
         }
 
 
