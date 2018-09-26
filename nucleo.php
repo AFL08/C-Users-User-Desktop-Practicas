@@ -3,8 +3,8 @@
     <title>Pagina Creada</title>
 </head>
 <body>
-    <input type="textbox" name="nombreSuperheroe"/><br/>
-    <input type="button" name="mostrarDatosHeroe"/><br/>
+    <!--<input type="textbox" name="nombreSuperheroe"/><br/>
+    <input type="button" name="mostrarDatosHeroe"/><br/>-->
 
 <?php
     include 'primero.php';
