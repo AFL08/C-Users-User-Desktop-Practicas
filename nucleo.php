@@ -13,9 +13,9 @@
         ,"Multimillonario, Prodigio creando armas, Con la armadura puede destruir cualquier cosa y consigue reponerse a cualquier problema"
         ,"Marvel");
         echo "<p>Prueba</p>";
-        /*$Spiderman = new Heroes("Spider-Man","Vuelo, Fuerza y Resistencia"
+        $Spiderman = new Heroes("Spider-Man","Vuelo, Fuerza y Resistencia"
         ,"Telarañas"
-        ,"Marvel");*/
+        ,"Marvel");
 
         $heroeRegistrado = array($IronMan,$Spiderman);
 
