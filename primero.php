@@ -2,9 +2,20 @@
 <?php
     include 'ConjuntoHeroes.php';
     #print "Hola mundo";
-    class Heroes 
+    class Heroes extends ConjuntoHeroes
     {
-        
+        public function __get($propiedad){
+            if(property_exists($this, $propiedad)){
+                return $this->$propiedad;
+            }
+        }
+
+        public function __set($propiedad2, $valor){
+            if(property_exists($this, $propiedad)){
+                $this->$property=$valor;
+            }
+            return $this;
+        }
 
         public function ComprobacionUniversoPerteneciente($universoHeroe){
             if($univeroHeroe == "DC"){

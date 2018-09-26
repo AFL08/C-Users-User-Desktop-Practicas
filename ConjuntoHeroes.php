@@ -10,6 +10,22 @@
             $this->descripcionHeroe=$descripcionHeroe;
             $this->universoHeroe=$universoHeroe;
         }
+
+        public function setNombreHeroe($nombreHeroe){}
+
+        public function getNombreHeroe(){}
+
+        public function setPoderHeroe($poderHeroe){}
+
+        public function getPoderHeroe(){}
+
+        public function setDescripcionHeroe($descripcionHeroe){}
+
+        public function getDescripcionHeroe(){}
+
+        public function setUniversoHeroe($universoHeroe){}
+
+        public function getUniversoHeroe(){}
         
         private function ComprobacionUniversoPerteneciente($universoHeroe){}
 
