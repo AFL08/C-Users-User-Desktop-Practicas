@@ -1,5 +1,9 @@
 <?php
     class ConexionBaseDatos{
+        private $nombreHeroe;
+        private $poderHeroe;
+        private $detallesHeroe;
+        private $universoHeroe;
         
 
         public function ComprobarConexion(){
@@ -13,12 +17,8 @@
         }
 
         public function ComprobacionDatosHeroes(){
-            $nombreHeroe;
-            $poderHeroe;
-            $detallesHeroe;
-            $universoHeroe;
             $heroeRegistrado = new Heroes($nombreHeroe,$poderHeroe,$detallesHeroe,$universoHeroe);
-            echo "<p>" . $nombreHeroe . "</p><br/>";
+            echo "<p>" . $heroeRegistrado->$nombreHeroe . "</p><br/>";
         }
         
         public function CerrarConexion(){
