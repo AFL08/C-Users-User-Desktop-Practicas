@@ -28,7 +28,7 @@
             #echo "<p>" . $hero . "</p><br/>";
             #if($heroeRegistrado=array($IronMan=array([]))
             ?>
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 25rem;">
             <!--<img class="card-img-top" src=".../100px180/" alt="Card image cap">-->
             <div class="card-body">
                 <h2 class="card-title">Nombre de Superheroe: <?php echo $hero->nombreHeroe?></h2>
