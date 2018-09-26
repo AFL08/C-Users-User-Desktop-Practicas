@@ -15,6 +15,10 @@
         ,"Telarañas"
         ,"Marvel");
 
+        $Batman = new Heroes("Batman","Vuelo, Fuerza, Batmovil","Tiene un puto batmovil","DC");
+
+        
+
         $heroeRegistrado = array($IronMan,$Spiderman);
 
         
