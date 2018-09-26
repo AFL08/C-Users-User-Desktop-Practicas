@@ -54,13 +54,17 @@
             }
             echo "<p>Conexion exitosa</p>";
             #var_dump($hero);
-            $conexionBaseDatos->query("INSERT INTO Heroe (nombre, poder, detalles, universo) values (' . $hero->nombreHeroe . ',' . $hero->poderHeroe . ',' . $hero->detallesHeroe . '
-            ,' . $hero->universoHeroe . ');");
-            /*mysqli_query("SELECT * FROM Heroe;");
-            echo */
-            
-            
-            
+            /*$conexionBaseDatos->query("INSERT INTO Heroe (nombre, poder, detalles, universo) values (' . $hero->nombreHeroe . ',' . $hero->poderHeroe . ',' . $hero->detallesHeroe . '
+            ,' . $hero->universoHeroe . ');");*/
+            $consultaDatosHeroes = mysqli_query("SELECT nombre, poder, detalles, universo FROM Heroe;");
+            while($filaConsultaHeroe = mysqli_fetch_object($consultaDatosHeroes)){
+                echo $fila->nombre;
+                echo $fila->poder;
+                echo $fila->detalles;
+                echo $fila->universo;
+            }
+            mysqli_free_result($consultaDatosHeroes);
+
         }
         mysqli_close();
         
