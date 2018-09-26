@@ -12,7 +12,7 @@
         $IronMan = new Heroes("Iron Man","Fuerza y Vuelo"
         ,"Multimillonario, Prodigio creando armas, Con la armadura puede destruir cualquier cosa y consigue reponerse a cualquier problema"
         ,"Marvel");
-        echo "<p>".$IronMan->get_universoHeroe()."</p>";
+        echo "<p>Prueba</p>";
         /*$Spiderman = new Heroes("Spider-Man","Vuelo, Fuerza y Resistencia"
         ,"Telarañas"
         ,"Marvel");*/
