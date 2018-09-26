@@ -21,7 +21,7 @@
 
         
 
-        $heroeRegistrado = array($IronMan,$Spiderman);
+        $heroeRegistrado = array($IronMan,$Spiderman,$Batman);
 
         
         foreach($heroeRegistrado as $hero){
