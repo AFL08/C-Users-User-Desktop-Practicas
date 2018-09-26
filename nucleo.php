@@ -26,7 +26,11 @@
 
         $heroeRegistrado = array($IronMan,$Spiderman,$Batman);
         
-        
+        $conexionBaseDatos
+            = mysqli_connect('localhost','alvaro','alvaro','HeroesRegistrados',3306);
+            if(!$conexionBaseDatos){
+                echo "<p>No se pudo conectar a la base de datos" . mysqli_error() . "</p>";
+            }
         
         foreach($heroeRegistrado as $hero){
 
@@ -47,25 +51,23 @@
             </div>
 
             <?php
-            $conexionBaseDatos
-            = mysqli_connect('localhost','alvaro','alvaro','HeroesRegistrados',3306);
-            if(!$conexionBaseDatos){
-                echo "<p>No se pudo conectar a la base de datos" . mysqli_error() . "</p>";
-            }
+            
             echo "<p>Conexion exitosa</p>";
             #var_dump($hero);
             /*$conexionBaseDatos->query("INSERT INTO Heroe (nombre, poder, detalles, universo) values (' . $hero->nombreHeroe . ',' . $hero->poderHeroe . ',' . $hero->detallesHeroe . '
             ,' . $hero->universoHeroe . ');");*/
-            $consultaDatosHeroes = mysqli_query("SELECT nombre, poder, detalles, universo FROM Heroe;");
-            while($filaConsultaHeroe = mysqli_fetch_object($consultaDatosHeroes)){
-                echo "$filaConsultaHeroe->nombre";
-                echo "$filaConsultaHeroe->poder";
-                echo "$filaConsultaHeroe->detalles";
-                echo "$filaConsultaHeroe->universo";
-            }
-            mysqli_free_result($consultaDatosHeroes);
+            
 
         }
+
+        $consultaDatosHeroes = mysqli_query("SELECT nombre, poder, detalles, universo FROM Heroe;");
+            while($filaConsultaHeroe = mysqli_fetch_object($consultaDatosHeroes)){
+                echo "<p>$filaConsultaHeroe->nombre</p><br/>";
+                echo "<p>$filaConsultaHeroe->poder</p><br/>";
+                echo "<p>$filaConsultaHeroe->detalles</p><br/>";
+                echo "<p>$filaConsultaHeroe->universo</p><br/>";
+            }
+            mysqli_free_result($consultaDatosHeroes);
         mysqli_close();
         
 ?>
