@@ -4,6 +4,14 @@
     #print "Hola mundo";
     class Heroes extends ConjuntoHeroes
     {
+
+        private function __construct($nombreHeroe, $poderHeroe, $descripcionHeroe, $universoHeroe){
+            $this->nombreHeroe=$nombreHeroe;
+            $this->poderHeroe=$poderHeroe;
+            $this->descripcionHeroe=$descripcionHeroe;
+            $this->universoHeroe=$universoHeroe;
+        }
+        
         public function __get($propiedad){
             if(property_exists($this, $propiedad)){
                 return $this->$propiedad;
