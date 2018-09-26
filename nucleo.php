@@ -18,12 +18,12 @@
 
         $heroeRegistrado = array($IronMan,$Spiderman);
 
+        echo "<p>hola</p>";
         foreach($heroeRegistrado as $hero){
             #echo "<p>" . $hero . "</p><br/>";
             #if($heroeRegistrado=array($IronMan=array([]))
-            echo "hola";
             var_dump($hero);
-            $hero->$IronMan->ComprobacionUniversoPerteneciente($IronMan->get_universoHeroe());
+            $IronMan->ComprobacionUniversoPerteneciente($IronMan->get_universoHeroe());
         }
 
 
