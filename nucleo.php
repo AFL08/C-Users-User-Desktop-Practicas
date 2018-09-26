@@ -42,7 +42,7 @@
 
             <?php
             #var_dump($hero);
-            #$hero->ComprobacionUniversoPerteneciente($hero->get_universoHeroe());
+            $hero->ComprobacionUniversoPerteneciente($hero->universoHeroe);
         }
 ?>
 
