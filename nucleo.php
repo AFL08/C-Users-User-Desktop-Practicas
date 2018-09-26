@@ -9,13 +9,13 @@
     <input type="button" name="mostrarDatosHeroe"/><br/>-->
 
 <?php
+        
+        
+        include 'primero.php';
         $conexionBaseDatos = mysql_connect("localhost","alvaro","alvaro","HeroesRegistrados");
         if(!$conexionBaseDatos){
             die("No se pudo conectar a la base de datos" . mysql_error());
         }
-        echo '<p>Conexion exitosa</p>';
-        mysql_close();
-        include 'primero.php';
         $IronMan = new Heroes("Iron Man","Fuerza y Vuelo"
         ,"Multimillonario"
         ,"marvel");
@@ -50,6 +50,9 @@
             <?php
             #var_dump($hero);
         }
+
+        echo '<p>Conexion exitosa</p>';
+        mysql_close();
 ?>
 
 
