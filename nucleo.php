@@ -24,7 +24,7 @@
             ?>
             <div class="card" style="width: 18rem;">
             <!--<img class="card-img-top" src=".../100px180/" alt="Card image cap">-->
-            <div class="card-body">
+            <div class="card-body" background-color="red">
                 <h1 class="card-title">Nombre de Superheroe: <?php echo $hero->nombreHeroe?></h1>
                 <p class="card-text">Poder SuperHeroe: <?php echo $hero->poderHeroe?></p>
                 <p class="card-text">Detalles SuperHeroe: <?php echo $hero->detallesHeroe?></p>
