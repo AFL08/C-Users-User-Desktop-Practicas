@@ -48,7 +48,10 @@
 
             <?php
             #var_dump($hero);
-            $realizacionConexion->ComprobacionDatosHeroes();
+            mysqli_query("INSERT INTO Heroe('nombre','poder','detalles','universo') VALUES('$hero->nombreHeroe','$hero->poderHeroe','$hero->detallesHeroe'
+            ,'$hero->universoHeroe');");
+            echo "Se ha registrado al Heroe" . $hero->nombreHeroe . " sin problema";
+            
         }
 
         $realizacionConexion->CerrarConexion();

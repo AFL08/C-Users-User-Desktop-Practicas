@@ -15,11 +15,6 @@
             echo "<p>Conexion exitosa</p>";
             
         }
-
-        public function ComprobacionDatosHeroes(){
-            $heroeRegistrado = new Heroes($nombreHeroe,$poderHeroe,$detallesHeroe,$universoHeroe);
-            echo "<p>" . $heroeRegistrado->$nombreHeroe . "</p><br/>";
-        }
         
         public function CerrarConexion(){
             mysqli_close();

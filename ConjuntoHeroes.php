@@ -4,6 +4,7 @@
         public $poderHeroe;
         public $detallesHeroe;
         public $universoHeroe;
+        public static $nombreHeroeEstatico;
         public function __construct(){}
 
         public function setNombreHeroe($nombreHeroe){}
