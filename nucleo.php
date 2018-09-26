@@ -26,10 +26,11 @@
 
         $heroeRegistrado = array($IronMan,$Spiderman,$Batman);
         
-        $realizacionConexion = new ConexionBaseDatos();
-        $realizacionConexion->ComprobarConexion();
+        
         
         foreach($heroeRegistrado as $hero){
+            $realizacionConexion = new ConexionBaseDatos();
+            $realizacionConexion->ComprobarConexion();
             #echo "<p>" . $hero . "</p><br/>";
             #if($heroeRegistrado=array($IronMan=array([]))
             ?>
@@ -51,10 +52,11 @@
             mysqli_query("INSERT INTO Heroe ('nombre','poder','detalles','universo') values ('$hero->nombreHeroe','$hero->poderHeroe','$hero->detallesHeroe'
             ,'$hero->universoHeroe')");
             echo "Se ha registrado al Heroe " . $hero->nombreHeroe . " sin problema";
+            $realizacionConexion->CerrarConexion();
             
         }
 
-        $realizacionConexion->CerrarConexion();
+        
 ?>
 </body>
 </html>
