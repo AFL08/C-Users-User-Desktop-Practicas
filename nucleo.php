@@ -24,7 +24,7 @@
             #echo "<p>" . $hero . "</p><br/>";
             #if($heroeRegistrado=array($IronMan=array([]))
             var_dump($hero);
-            $IronMan->ComprobacionUniversoPerteneciente($IronMan->get_universoHeroe());
+            #$IronMan->ComprobacionUniversoPerteneciente($IronMan->get_universoHeroe($IronMan->$));
         }
 
 
