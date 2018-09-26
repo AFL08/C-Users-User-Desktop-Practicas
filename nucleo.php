@@ -9,9 +9,9 @@
     <input type="button" name="mostrarDatosHeroe"/><br/>-->
 
 <?php
-        $conexionBaseDatos = mysql_connect("localhost","alvaro","alvaro");
+        $conexionBaseDatos = mysql_connect("localhost","alvaro","alvaro","HeroesRegistrados");
         if(!$conexionBaseDatos){
-            die("No se pudo conexta a la base de datos" . mysql_error());
+            die("No se pudo conectar a la base de datos" . mysql_error());
         }
         echo '<p>Conexion exitosa</p>';
         mysql_close();
