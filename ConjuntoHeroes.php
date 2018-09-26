@@ -4,12 +4,15 @@
         private $poderHeroe;
         private $detallesHeroe;
         private $universoHeroe;
-        public function __construct($nombreHeroe, $poderHeroe, $descripcionHeroe, $universoHeroe){
+        private function __construct($nombreHeroe, $poderHeroe, $descripcionHeroe, $universoHeroe){
             $this->nombreHeroe=$nombreHeroe;
             $this->poderHeroe=$poderHeroe;
             $this->descripcionHeroe=$descripcionHeroe;
             $this->universoHeroe=$universoHeroe;
         }
+        
+        private function ComprobacionUniversoPerteneciente($universoHeroe){}
+
 
     }
 
