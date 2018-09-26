@@ -41,7 +41,9 @@
                 <p class="card-text">Detalles SuperHeroe: <?php echo $hero->detallesHeroe?></p>
                 <p class="card-text">Universo SuperHeroe: <?php echo $hero->ComprobacionUniversoPerteneciente($hero->universoHeroe)?></p>
                 <img class="card-img-top" src="/Imagenes/<?php echo $hero->universoHeroe?>.png" alt="Card image cap" height="100px">
-                
+                <?php 
+                $realizacionConexion->ComprobacionDatosHeroes();
+                ?>
                 <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
             </div>
             </div>
