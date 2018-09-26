@@ -12,10 +12,7 @@
         
         
         include 'primero.php';
-        $conexionBaseDatos = mysql_connect("localhost","alvaro","alvaro","HeroesRegistrados");
-        if(!$conexionBaseDatos){
-            die("No se pudo conectar a la base de datos" . mysql_error());
-        }
+        include 'ConexionBaseDatos.php';
         $IronMan = new Heroes("Iron Man","Fuerza y Vuelo"
         ,"Multimillonario"
         ,"marvel");
@@ -25,7 +22,7 @@
 
         $Batman = new Heroes("Batman","Vuelo, Fuerza, Batmovil","Tiene un puto batmovil","dc");
 
-        
+        /*fetch para recoger los datos de una base de datos*/
 
         $heroeRegistrado = array($IronMan,$Spiderman,$Batman);
 
@@ -51,8 +48,8 @@
             #var_dump($hero);
         }
 
-        echo '<p>Conexion exitosa</p>';
-        mysql_close();
+        $realizacionConexion = new ConexionBaseDatos();
+        $realizacionConexion->ComprobarConexion();
 ?>
 
 
