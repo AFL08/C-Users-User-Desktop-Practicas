@@ -8,13 +8,13 @@
 
 <?php
         include 'primero.php';
-        $IronMan = new Heroes("Iron Man","Fuerza y Vuelo"
+        /*$IronMan = new Heroes("Iron Man","Fuerza y Vuelo"
         ,"Multimillonario, Prodigio creando armas, Con la armadura puede destruir cualquier cosa y consigue reponerse a cualquier problema"
         ,"Marvel");
         
         $Spiderman = new Heroes("Spider-Man","Vuelo, Fuerza y Resistencia"
         ,"Telarañas"
-        ,"Marvel");
+        ,"Marvel");*/
 
         /*$heroeRegistrado = array($IronMan,$Spiderman);*/
 
