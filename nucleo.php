@@ -7,7 +7,7 @@
     <input type="button" name="mostrarDatosHeroe"/><br/>-->
 
 <?php
-        /*include 'primero.php';
+        include 'primero.php';
         $IronMan = new Heroes("Iron Man","Fuerza y Vuelo"
         ,"Multimillonario, Prodigio creando armas, Con la armadura puede destruir cualquier cosa y consigue reponerse a cualquier problema"
         ,"Marvel");
@@ -16,7 +16,7 @@
         ,"Telarañas"
         ,"Marvel");
 
-        $heroeRegistrado = array($IronMan,$Spiderman);*/
+        /*$heroeRegistrado = array($IronMan,$Spiderman);*/
 
         echo "<p>hola</p>";
         /*foreach($heroeRegistrado as $hero){
