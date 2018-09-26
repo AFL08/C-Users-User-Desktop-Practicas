@@ -9,9 +9,21 @@
                 echo "<p>No se pudo conectar a la base de datos" . mysqli_error() . "</p>";
             }
             echo "<p>Conexion exitosa</p>";
-            mysqli_close();
+            
+        }
+
+        public function ComprobacionDatosHeroes(){
+            $nombreHeroe;
+            $poderHeroe;
+            $detallesHeroe;
+            $universoHeroe;
+            $heroeRegistrado = new Heroes($nombreHeroe,$poderHeroe,$detallesHeroe,$universoHeroe);
+            echo "<p>" . $nombreHeroe . "</p><br/>";
         }
         
+        public function CerrarConexion(){
+            mysqli_close();
+        }
         
     }
     

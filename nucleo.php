@@ -25,7 +25,9 @@
         /*fetch para recoger los datos de una base de datos*/
 
         $heroeRegistrado = array($IronMan,$Spiderman,$Batman);
-
+        
+        $realizacionConexion = new ConexionBaseDatos();
+        $realizacionConexion->ComprobarConexion();
         
         foreach($heroeRegistrado as $hero){
             #echo "<p>" . $hero . "</p><br/>";
@@ -48,8 +50,7 @@
             #var_dump($hero);
         }
 
-        $realizacionConexion = new ConexionBaseDatos();
-        $realizacionConexion->ComprobarConexion();
+        $realizacionConexion->CerrarConexion();
 ?>
 </body>
 </html>
