@@ -5,10 +5,10 @@
     class Heroes extends ConjuntoHeroes
     {
 
-        public function __construct($nombreHeroe, $poderHeroe, $descripcionHeroe, $universoHeroe){
+        public function __construct($nombreHeroe, $poderHeroe, $detallesHeroe, $universoHeroe){
             $this->nombreHeroe=$nombreHeroe;
             $this->poderHeroe=$poderHeroe;
-            $this->descripcionHeroe=$descripcionHeroe;
+            $this->detallesHeroe=$detallesHeroe;
             $this->universoHeroe=$universoHeroe;
         }
 
