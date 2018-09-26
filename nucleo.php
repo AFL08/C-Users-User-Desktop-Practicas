@@ -51,7 +51,7 @@
             #var_dump($hero);
             mysqli_query("INSERT INTO Heroe (nombre, poder, detalles, universo) values ('$hero->nombreHeroe','$hero->poderHeroe','$hero->detallesHeroe'
             ,'$hero->universoHeroe');");
-            printf('Has registrado al heroe con la identificacion: %d/n', mysqli_insert_id());
+            printf('Has registrado al heroe con la identificacion: %d\n', mysqli_insert_id());
             $realizacionConexion->CerrarConexion();
             
         }
