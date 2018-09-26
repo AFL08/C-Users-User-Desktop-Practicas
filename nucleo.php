@@ -51,8 +51,5 @@
         $realizacionConexion = new ConexionBaseDatos();
         $realizacionConexion->ComprobarConexion();
 ?>
-
-
-
 </body>
 </html>
