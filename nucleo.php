@@ -9,12 +9,12 @@
     <input type="button" name="mostrarDatosHeroe"/><br/>-->
 
 <?php
-        $conexionBaseDatos = mysql_connect("192.168.1.144","alvaro","alvaro");
+        /*$conexionBaseDatos = mysql_connect("192.168.1.144","alvaro","alvaro");
         if(!$conexionBaseDatos){
             die("No se pudo conexta a la base de datos" . mysql_error());
         }
         echo '<p>Conexion exitosa</p>';
-        mysql_close();
+        mysql_close();*/
         include 'primero.php';
         $IronMan = new Heroes("Iron Man","Fuerza y Vuelo"
         ,"Multimillonario"
