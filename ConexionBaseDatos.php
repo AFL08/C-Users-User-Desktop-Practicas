@@ -1,10 +1,6 @@
 <?php
     class ConexionBaseDatos{
-        private $nombreHeroe;
-        private $poderHeroe;
-        private $detallesHeroe;
-        private $universoHeroe;
-        
+        public $conexionBaseDatos;
 
         public function ComprobarConexion(){
             echo "<p>Hola Mundo</p>";

@@ -50,8 +50,8 @@
             $realizacionConexion = new ConexionBaseDatos();
             $realizacionConexion->ComprobarConexion();
             #var_dump($hero);
-            mysqli_select_db("HeroesRegistrados");
-            mysqli_query("INSERT INTO Heroe (nombre, poder, detalles, universo) values (' . $hero->nombreHeroe . ',' . $hero->poderHeroe . ',' . $hero->detallesHeroe . '
+            $realizacionConexion->conexionBaseDatos
+             = mysqli_query("INSERT INTO Heroe (nombre, poder, detalles, universo) values (' . $hero->nombreHeroe . ',' . $hero->poderHeroe . ',' . $hero->detallesHeroe . '
             ,' . $hero->universoHeroe . ');");
             /*mysqli_query("SELECT * FROM Heroe;");
             echo*/ 
