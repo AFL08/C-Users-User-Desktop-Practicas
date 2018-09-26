@@ -12,12 +12,12 @@
         include 'primero.php';
         $IronMan = new Heroes("Iron Man","Fuerza y Vuelo"
         ,"Multimillonario"
-        ,"Marvel");
+        ,"marvel");
         $Spiderman = new Heroes("Spider-Man","Vuelo, Fuerza y Resistencia"
         ,"Telarañas"
-        ,"Marvel");
+        ,"marvel");
 
-        $Batman = new Heroes("Batman","Vuelo, Fuerza, Batmovil","Tiene un puto batmovil","DC");
+        $Batman = new Heroes("Batman","Vuelo, Fuerza, Batmovil","Tiene un puto batmovil","dc");
 
         
 
